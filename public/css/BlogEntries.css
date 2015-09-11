@@ -1,0 +1,53 @@
+/** /public/css/BlogEntries.css */
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
+* { box-sizing:border-box; }
+
+body { background:url(http://subtlepatterns.com/patterns/little_pluses.png) #cacaca;}
+
+#create, textarea  {
+    padding:25px 25px 40px;
+    margin:0 20px 20px 0;
+}
+
+#create {
+    user-select:none;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    border:15px solid rgba(0,0,0,0.1);
+    cursor:pointer;
+    color:rgba(0,0,0,0.1);
+    font:220px "Helvetica", sans-serif;
+    line-height:185px;
+}
+
+#create:hover { border-color:rgba(0,0,0,0.2); color:rgba(0,0,0,0.2); }
+
+textarea {
+    font:20px 'Gloria Hallelujah', cursive;
+    line-height:1.5;
+    border:0;
+    border-radius:3px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:box-shadow 0.5s ease;
+    transition:-webkit-box-shadow 0.5s ease;
+    font-smoothing:subpixel-antialiased;
+    width:100%;
+}
+textarea:hover { box-shadow:0 5px 8px rgba(0,0,0,0.15); }
+textarea:focus { box-shadow:0 5px 12px rgba(0,0,0,0.2); outline:none; }
+
+.delete-blog{
+    display: none;
+}
+a.delete-blog {
+    color: red;
+}
+.blog-entry:hover .delete-blog {
+    display: block;
+}
+.clear-both {
+    clear: both;
+}

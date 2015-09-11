@@ -1,0 +1,15 @@
+<?php
+// /BlogEntries/view/blog-entries/blog-entries/index.phtml
+?>
+
+<div id="blog-entries">
+    <?php foreach($blogentries as $blogentry):?>
+    <div class="blog-entry">
+        <textarea id="blogentry-<?php echo $blogentry->getId() ?>"><?php echo $blogentry->getEntry() ?></textarea>
+        <a href="#" id="remove-<?php echo $blogentry->getId(); ?>"class="delete-blog">X</a>
+    </div>
+    <?php endforeach; ?>
+    <div id="create">+</div>
+
+</div>
+<div class="clear-both"></div>
